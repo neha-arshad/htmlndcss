@@ -1,0 +1,350 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Josefin Sans", sans-serif;
+}
+
+header {
+  width: 100%;
+  height: 100vh;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.3), rgba(0, 0, 0, 0.15)),
+    url("/tomb.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  margin-bottom: 40px;
+}
+
+nav {
+  width: 100%;
+  height: 10vh;
+  background: rgba(0, 0, 0, 0.1);
+  color: white;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  text-transform: uppercase;
+}
+
+nav .logo {
+  width: 25%;
+  text-align: center;
+}
+.logo img {
+  height: 50px;
+  width: auto;
+  margin-right: 17rem;
+}
+.heartBeat {
+  animation-duration: 20s;
+}
+
+nav .menu {
+  width: 40%;
+  display: flex;
+  justify-content: space-around;
+}
+
+nav .menu a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+}
+
+nav .menu a:hover {
+  text-decoration: none;
+  border-bottom: 5px solid #006600;
+}
+
+main {
+  width: 100%;
+  height: 85vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  color: white;
+}
+
+section h2 {
+  font-size: 35px;
+  font-weight: 200;
+  letter-spacing: 2px;
+  text-shadow: 1px 1px 2px #006600;
+}
+
+section h1 {
+  margin: 30px 0 20px 0;
+  font-size: 55px;
+  font-weight: 700;
+  text-shadow: 1px 1px 2px #006600;
+  text-transform: uppercase;
+}
+
+section p {
+  font-size: 25px;
+  word-spacing: 2px;
+  margin-bottom: 25px;
+  text-shadow: 1px 1px 2px #006600;
+}
+
+section a {
+  padding: 12px 30px;
+  border-radius: 4px;
+  outline: none;
+  text-transform: uppercase;
+  font-size: 13px;
+  font-weight: 500;
+  text-decoration: none;
+  letter-spacing: 1px;
+  transition: all 0.5s ease;
+}
+
+section .btnone {
+  background: #fff;
+  color: #000;
+}
+
+.btnone:hover {
+  background: #006600;
+  color: white;
+}
+
+.change_content:after {
+  content: "";
+  animation: changetext 10s infinite linear;
+  color: #006600;
+}
+
+@keyframes changetext {
+  0% {
+    content: "Islamabad";
+  }
+  20% {
+    content: "Naran kagan";
+  }
+  35% {
+    content: "Sawat";
+  }
+  60% {
+    content: "kashmir";
+  }
+  80% {
+    content: "skardu";
+  }
+  100% {
+    content: "Muree";
+  }
+}
+
+/* Gallery styling */
+.image-container {
+  display: grid;
+  margin-top: 40px;
+  margin-left: 4rem;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 1px;
+}
+
+.image-item {
+  position: relative;
+  margin-top: 2rem;
+  border-radius: 8px;
+  text-align: center;
+}
+
+.image-item img {
+  width: 300px;
+  height: 200px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.overlay-text {
+  align-items: center;
+  margin-top: 10px;
+  font-size: 1.2rem;
+  color: #04481f;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+.fa-solid {
+  font-size: 1.5rem;
+  color: #006600;
+}
+
+.Heading {
+  background-color: #f8f9fa;
+  padding: 20px;
+  text-align: center;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(15, 94, 1, 0.1);
+  margin: 60px auto;
+  max-width: 600px;
+}
+
+.Heading h1 {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: black;
+  margin: 0;
+  line-height: 1.2;
+}
+
+.highlight {
+  color: #006600;
+}
+
+/* About section styling */
+.about-image {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  margin-right: 10rem;
+  margin-top: 5rem;
+}
+
+.about-container {
+  margin-left: 20rem;
+  width: 100%;
+  max-width: 500px;
+}
+
+.about-container img {
+  width: 100%;
+  height: auto;
+  margin-left: 25rem;
+}
+
+.text-container h2 {
+  font-size: 1.8rem;
+  color: #333333;
+}
+
+.text-container p {
+  margin-top: 1rem;
+  font-size: 1.5rem;
+  color: #025a31;
+  text-align: left;
+  font-weight: bold;
+  font-style: italic;
+}
+
+/* Contact section styling */
+.contact-container {
+  max-width: 600px;
+  margin: 0 auto;
+  padding: 20px;
+  background-color: #053d05;
+  border-radius: 8px;
+}
+
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  margin-bottom: 5px;
+  font-weight: bold;
+  color: #fff;
+}
+
+input[type="text"],
+input[type="email"],
+textarea {
+  width: 100%;
+  padding: 8px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+.button-container {
+  display: flex;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+button {
+  background-color: #006600;
+  color: white;
+  border: none;
+  padding: 10px 15px;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: white;
+  color: #006600;
+}
+
+/* Footer section styling */
+footer {
+  background-color: #006600;
+  color: white;
+  padding: 40px 0;
+  margin-top: 5rem;
+}
+
+.footer-content {
+  display: flex;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+
+.footer-section {
+  flex: 1;
+  padding: 20px;
+}
+
+.footer-section h2 {
+  font-size: 1.5rem;
+  margin-bottom: 15px;
+}
+
+.footer-section p {
+  line-height: 1.5;
+  color: #d3d3d3;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin: 10px 0;
+}
+
+.footer-section ul li a {
+  color: white;
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.social-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.social-icons a {
+  color: white;
+  font-size: 1.5rem;
+  text-decoration: none;
+}
+
+.footer-bottom {
+  background-color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-size: 1rem;
+  font-weight: bold;
+  color: rgb(2, 81, 2);
+  margin-top: 20px;
+}
